@@ -56,7 +56,7 @@ const HeroSection = () => {
                             onClick={openPDF}
                             href="/program-brochure.pdf"
                             download
-                            className="hidden lg:inline-flex items-center gap-3
+                            className="inline-flex items-center gap-3
     bg-[#d9e38a] text-[#0b1818]
     px-8 py-4 rounded-2xl text-sm font-semibold uppercase
     hover:bg-[#436b56] hover:text-white transition cursor-pointer"
