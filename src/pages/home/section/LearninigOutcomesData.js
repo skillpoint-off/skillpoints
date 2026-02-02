@@ -8,7 +8,7 @@ import Fastapi from "../../../assets/icons/Fastapi.svg";
 import Flask from "../../../assets/icons/Flask.svg";
 import GCP from "../../../assets/icons/GCP.png";
 import Hugging from "../../../assets/icons/Hugging.svg";
-import Mysql from "../../../assets/icons/Mysql.svg";
+import Mysql from "../../../assets/icons/mysql.svg";
 import NumPy from "../../../assets/icons/NumPy.svg";
 import OpenCv from "../../../assets/icons/OpenCV.svg";
 import Pandas from "../../../assets/icons/Pandas.svg";
