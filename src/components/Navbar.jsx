@@ -78,14 +78,14 @@ export default function Navbar() {
 
                             <button
                                 onClick={() => handleNavScroll("learning")}
-                                className="hover:text-[#6ED190]"
+                                className="hover:text-[#6ED190] cursor-pointer"
                             >
                                 Learning
                             </button>
 
                             <button
                                 onClick={() => handleNavScroll("outcomes")}
-                                className="hover:text-[#6ED190]"
+                                className="hover:text-[#6ED190] cursor-pointer"
                             >
                                 Outcomes
                             </button>

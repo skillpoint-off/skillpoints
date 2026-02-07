@@ -79,9 +79,9 @@ const SalesTimeline = () => {
 
                 {/* TITLE */}
                 <h2 className="text-white text-xl lg:text-2xl font-light mb-12">
-                    Build Your Own Business:{" "}
+                    Build Your Own Projects:{" "}
                     <span className="font-medium">
-                        Learn Sales by Doing Sales
+                        Learn AI by Buliding AI
                     </span>
                 </h2>
 

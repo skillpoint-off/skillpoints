@@ -176,7 +176,7 @@ const outcomes = [
 
     // ===== COURSE B : SYSTEMS & SOFTWARE ENGINEERING =====
     {
-        id: 10,
+        id: 1,
         title: "Core Programming Foundations",
         intro: "Before systems and scale, engineers must write correct and efficient code.",
         points: [
@@ -193,7 +193,7 @@ const outcomes = [
     },
 
     {
-        id: 11,
+        id: 2,
         title: "Data Structures & Algorithms (DSA)",
         intro: "Problem-solving is the backbone of engineering.",
         points: [
@@ -210,7 +210,7 @@ const outcomes = [
     },
 
     {
-        id: 12,
+        id: 3,
         title: "Operating Systems & Low-level Systems",
         intro: "Software performance depends on how systems work underneath.",
         points: [
@@ -227,7 +227,7 @@ const outcomes = [
     },
 
     {
-        id: 13,
+        id: 4,
         title: "Computer Networks & Distributed Basics",
         intro: "Modern software runs on connected and distributed systems.",
         points: [
@@ -244,7 +244,7 @@ const outcomes = [
     },
 
     {
-        id: 14,
+        id: 5,
         title: "Databases & Data Management",
         intro: "Data is the backbone of every software system.",
         points: [
@@ -261,7 +261,7 @@ const outcomes = [
     },
 
     {
-        id: 15,
+        id: 6,
         title: "Software Engineering Principles",
         intro: "Engineering discipline separates coders from software engineers.",
         points: [
@@ -278,7 +278,7 @@ const outcomes = [
     },
 
     {
-        id: 16,
+        id: 7,
         title: "System Design & Architecture",
         intro: "Design systems that scale, perform, and survive real-world usage.",
         points: [
@@ -295,7 +295,7 @@ const outcomes = [
     },
 
     {
-        id: 17,
+        id: 8,
         title: "Cloud, DevOps & Deployment",
         intro: "Modern software must ship fast and run reliably.",
         points: [
@@ -312,7 +312,7 @@ const outcomes = [
     },
 
     {
-        id: 18,
+        id: 9,
         title: "Building Production-Grade Applications",
         intro: "Turn designs into reliable, real-world software products.",
         points: [

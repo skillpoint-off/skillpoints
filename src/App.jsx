@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 // Pages
 import Home from "./pages/home/home.jsx";
 import Contact from "./pages/contact/Contact";
+import Register from "./pages/register/Register.jsx";
 
 
 // import Learning from "./pages/Learning";
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/home" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/register" element={<Register />} />
 
         
         {/* <Route path="/learning" element={<Learning />} />

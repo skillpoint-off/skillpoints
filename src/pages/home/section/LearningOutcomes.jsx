@@ -21,8 +21,8 @@ const LearningOutcomes = () => {
                         <button
                             onClick={() => { setCourse("A"); setActive(0); }}
                             className={`px-4 py-2 rounded-full text-sm cursor-pointer ${course === "A"
-                                    ? "bg-[#D9E38A] text-black"
-                                    : "border border-white/30 text-white/70"
+                                ? "bg-[#D9E38A] text-black"
+                                : "border border-white/30 text-white/70"
                                 }`}
                         >
                             AI & Machine Learning
@@ -30,8 +30,8 @@ const LearningOutcomes = () => {
                         <button
                             onClick={() => { setCourse("B"); setActive(0); }}
                             className={`px-4 py-2 rounded-full text-sm cursor-pointer ${course === "B"
-                                    ? "bg-[#D9E38A] text-black"
-                                    : "border border-white/30 text-white/70"
+                                ? "bg-[#D9E38A] text-black"
+                                : "border border-white/30 text-white/70"
                                 }`}
                         >
                             System & Software Engineer Pro
@@ -43,7 +43,7 @@ const LearningOutcomes = () => {
                     </h2>
                     <p className="text-white/80 mb-2">
                         Build rock-solid programming fundamentals covering memory, OOP, and clean code principles used in real systems.
-                       
+
                     </p>
                     <p className="text-white/80">
                         Develop the ability to think in logic, abstractions, and trade-offs before touching AI models or large systems.
@@ -54,14 +54,14 @@ const LearningOutcomes = () => {
             </div>
 
             {/* DESKTOP */}
-            <div className="hidden lg:flex border border-[#183D2C] rounded-3xl mt-10 overflow-hidden">
+            <div className=" lg:flex border border-[#183D2C] rounded-3xl mt-10 overflow-hidden">
                 {/* LEFT 9 TITLES */}
-                <div className="w-[22rem] bg-[#183D2C] py-4">
+                <div className="md:w-[22rem] w-full bg-[#183D2C] py-4">
                     {courseOutcomes.map((item, index) => (
                         <div
                             key={item.id}
                             onClick={() => setActive(index)}
-                            className={`px-6 py-3 cursor-pointer border-b border-white/10  
+                            className={`px-6 py-3 cursor-pointer border-b border-white/10 text-sm md:text-base  
                 ${index === active
                                     ? "text-[#D9E38A] font-semibold"
                                     : "text-white/60 hover:text-white"
@@ -72,44 +72,45 @@ const LearningOutcomes = () => {
                         </div>
                     ))}
                 </div>
+                <div className="hidden md:flex">
+                    {/* RIGHT CONTENT */}
+                    <div className="flex-1 p-10">
+                        <h4 className="font-medium mb-4">{current.intro}</h4>
 
-                {/* RIGHT CONTENT */}
-                <div className="flex-1 p-10">
-                    <h4 className="font-medium mb-4">{current.intro}</h4>
-
-                    <ul className="list-disc pl-5 text-white/80 text-sm space-y-1 mb-8">
-                        {current.points.map((p, i) => (
-                            <li className="" key={i}>{p}</li>
-                        ))}
-                    </ul>
-
-                    {/* TOOLS (IMAGE STYLE) */}
-                    <div className="mb-10">
-                        <p className="text-white/60 mb-4">Tools</p>
-                        <div className="flex flex-wrap gap-4">
-                            {current.tools.map((tool, i) => (
-                                <img
-                                    key={i}
-                                    src={tool}
-                                    className="h-9 "
-                                />
+                        <ul className="list-disc pl-5 text-white/80 text-sm space-y-1 mb-8">
+                            {current.points.map((p, i) => (
+                                <li className="" key={i}>{p}</li>
                             ))}
-                        </div>
-                    </div>
+                        </ul>
 
-                    {/* TECHNIQUES (LUCIDE ICONS) */}
-                    <div>
-                        <p className="text-white/60 mb-4">Techniques</p>
-                        <div className="flex flex-wrap gap-12">
-                            {current.techniques.map((tech, i) => {
-                                const Icon = Icons[tech.icon] || Icons.Circle;
-                                return (
-                                    <div key={i} className="max-w-[140px]">
-                                        <Icon className="w-5 h-5 text-[#7AE2B6] mb-2" />
-                                        <p className="text-sm text-white/80 ">{tech.text}</p>
-                                    </div>
-                                );
-                            })}
+                        {/* TOOLS (IMAGE STYLE) */}
+                        <div className="mb-10 ">
+                            <p className="text-white/60 mb-4">Tools</p>
+                            <div className="flex flex-wrap gap-4">
+                                {current.tools.map((tool, i) => (
+                                    <img
+                                        key={i}
+                                        src={tool}
+                                        className="h-9 "
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* TECHNIQUES (LUCIDE ICONS) */}
+                        <div>
+                            <p className="text-white/60 mb-4">Techniques</p>
+                            <div className="flex flex-wrap gap-12">
+                                {current.techniques.map((tech, i) => {
+                                    const Icon = Icons[tech.icon] || Icons.Circle;
+                                    return (
+                                        <div key={i} className="max-w-[140px]">
+                                            <Icon className="w-5 h-5 text-[#7AE2B6] mb-2" />
+                                            <p className="text-sm text-white/80 ">{tech.text}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -6,13 +6,17 @@ import Medal from "../../../assets/images/medal-1.svg"
 import coireiLogo from "../../../assets/images/coirei-logo-orange.png";
 import foundersImg from "../../../assets/images/Paytm-cred-uc-meesho-Swiggy.webp";
 import backedImg from "../../../assets/images/Frame-1297.webp";
-
+import { useNavigate } from "react-router-dom";
 import desktopVideoThumb from "../../../assets/images/banner.png";
-import {  Download } from"lucide-react"
+import { Download, ArrowRight } from "lucide-react"
 const openPDF = () => {
     window.open("/program-brochure.pdf", "_blank");
 };
+
+
 const HeroSection = () => {
+    const navigate = useNavigate();
+    
     return (
         <section className=" text-white  py-10 lg:py-15 ">
             <div className="lg:mx-15 md:mx-10 mx-5">
@@ -24,7 +28,7 @@ const HeroSection = () => {
                         <h1 className="text-xl lg:text-2xl font-light leading-snug mb-5 ">
                             <span>Learn Like an </span>
                             <span className="font-medium">
-                               Engineer <br className="hidden lg:block" />
+                                Engineer <br className="hidden lg:block" />
                                 &amp; Work Like One
                             </span>
                         </h1>
@@ -52,26 +56,32 @@ const HeroSection = () => {
                         </div>
 
                         {/* CTA */}
-                        <a
-                            onClick={openPDF}
-                            href="/program-brochure.pdf"
-                            download
-                            className="inline-flex items-center gap-3
-    bg-[#d9e38a] text-[#0b1818]
-    px-8 py-4 rounded-2xl text-sm font-semibold uppercase
-    hover:bg-[#436b56] hover:text-white transition cursor-pointer"
-                        >
-                            DOWNLOAD PROGRAM BROCHURE <span><Download size={20} /></span>
-                        </a>
+                        <div className="flex gap-5 flex-col md:flex-row ">
+                            <a
+                                onClick={openPDF}
+                                href="/program-brochure.pdf"
+                                download
+                                className="inline-flex items-center gap-3 bg-[#d9e38a] text-[#0b1818]  px-8 py-4 rounded-2xl text-sm font-semibold uppercase hover:bg-[#436b56] hover:text-white transition cursor-pointer"
+                            >
+                                DOWNLOAD PROGRAM BROCHURE <span><Download size={20} /></span>
+                            </a>
+                            <a
+                                // onClick={() => navigate("/register")} 
+                                onClick={() => window.location.href = "https://rzp.io/rzp/MCGkrYG"}
 
-
+                                className="inline-flex justify-between items-center gap-3 bg-[#436b56] text-[#fff]  px-8 py-4 rounded-2xl text-sm font-semibold uppercase hover:bg-[#d9e38a] hover:text-black transition cursor-pointer"
+                            >
+                                Register <span><ArrowRight size={20} /></span>
+                            </a>
+                        </div>
                         {/* Divider */}
                         <div className="hidden lg:block border-t border-[#81A093] my-10" />
 
                         {/* Logos */}
                         <div className="flex gap-3 lg:gap-3 max-lg:hidden ">
+                            <LogoBlock title="Powered by:" img={coireiLogo} />
                             <LogoBlock title="Backed by:" img={coireiLogo} />
-                           
+
                         </div>
                     </div>
 
